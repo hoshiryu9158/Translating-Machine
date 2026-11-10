@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연성 번역 연구소</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="romance">
+
+    <header class="header">
+        <div class="logo">✦ FANWORK TRANSLATOR ✦</div>
+        <div class="subtitle">언어의 장벽을 넘어, 나의 연성을 읽다.</div>
+    </header>
+
+    <main class="container">
+
+        <section class="theme-switch">
+            <button id="romanceBtn" class="active">💌 90's ROMANCE</button>
+            <button id="cyberBtn">⚡ CYBERPUNK</button>
+        </section>
+
+        <section class="intro">
+            <h1>연성 번역기</h1>
+            <p>당신의 최애와 이야기를 더 가까이.</p>
+        </section>
+
+        <section class="settings">
+            <label for="work">작품 선택</label>
+            <select id="work">
+                <option value="">작품을 선택하세요</option>
+                <option>테스트 작품 A</option>
+                <option>테스트 작품 B</option>
+            </select>
+
+            <label for="genre">장르</label>
+            <select id="genre">
+                <option>로맨스</option>
+                <option>판타지</option>
+                <option>일상</option>
+                <option>개그</option>
+                <option>드라마</option>
+            </select>
+        </section>
+
+        <section class="translation-area">
+            <label for="source">원문 입력 / 日本語</label>
+            <textarea id="source" placeholder="翻訳したい文章を入力してください。"></textarea>
+
+            <button id="translateBtn" class="translate-button">
+                ✦ 번역하기 ✦
+            </button>
+
+            <label for="result">번역 결과 / 한국어</label>
+            <textarea id="result" placeholder="번역 결과가 여기에 표시됩니다." readonly></textarea>
+        </section>
+
+        <footer>
+            <p>FANWORK TRANSLATOR</p>
+            <small>Made for people who love stories.</small>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

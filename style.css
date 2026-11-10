@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Mono:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+button, select, textarea {
+    font: inherit;
+}
+
+/* 공통 레이아웃 */
+
+.header {
+    text-align: center;
+    margin: 15px 0 30px;
+}
+
+.logo {
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+.theme-switch {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.theme-switch button {
+    flex: 1;
+    padding: 13px 5px;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.settings {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.settings label,
+.translation-area label {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid;
+    outline: none;
+}
+
+textarea {
+    min-height: 160px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.translate-button {
+    width: 100%;
+    padding: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.translation-area {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* A. 90년대 인소풍 */
+
+body.romance {
+    background: #fff0f7;
+    color: #733e70;
+    font-family: 'Gowun Batang', serif;
+}
+
+.romance .logo {
+    color: #d66ca9;
+}
+
+.romance .subtitle {
+    color: #b36d9c;
+}
+
+.romance .theme-switch button {
+    background: #ffe0ef;
+    color: #a24c88;
+    border-color: #e9a5ce;
+    border-radius: 20px;
+}
+
+.romance .theme-switch button.active {
+    background: #d985bd;
+    color: white;
+}
+
+.romance .intro h1 {
+    color: #c45d9f;
+    text-shadow: 2px 2px #ffffff;
+}
+
+.romance select,
+.romance textarea {
+    background: #fffafd;
+    color: #733e70;
+    border-color: #e9afd2;
+    border-radius: 12px;
+}
+
+.romance .translate-button {
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #f3a4ce, #c6a5ec);
+    color: white;
+}
+
+.romance footer {
+    color: #b77da7;
+}
+
+/* B. 사이버펑크풍 */
+
+body.cyber {
+    background: #080b16;
+    color: #00f5ff;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.cyber .header {
+    color: #ff36c7;
+}
+
+.cyber .logo {
+    text-shadow: 0 0 10px #ff36c7;
+}
+
+.cyber .subtitle {
+    color: #00f5ff;
+}
+
+.cyber .theme-switch button {
+    background: #11182a;
+    color: #00f5ff;
+    border-color: #00f5ff;
+    border-radius: 3px;
+}
+
+.cyber .theme-switch button.active {
+    background: #00d9e8;
+    color: #080b16;
+    box-shadow: 0 0 15px #00d9e8;
+}
+
+.cyber .intro h1 {
+    color: #ff36c7;
+    text-shadow: 0 0 12px #ff36c7;
+}
+
+.cyber .settings label,
+.cyber .translation-area label {
+    color: #00f5ff;
+}
+
+.cyber select,
+.cyber textarea {
+    background: #101627;
+    color: #00f5ff;
+    border-color: #00d9e8;
+    border-radius: 3px;
+}
+
+.cyber select:focus,
+.cyber textarea:focus {
+    box-shadow: 0 0 10px #00d9e8;
+}
+
+.cyber .translate-button {
+    background: #ff36c7;
+    color: white;
+    border: 1px solid #ff36c7;
+    box-shadow: 0 0 15px #ff36c7;
+    border-radius: 3px;
+}
+
+.cyber footer {
+    color: #ff36c7;
+}
